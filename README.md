@@ -3,9 +3,9 @@
 
 <em>By: Wilson Stewart, Alaa Senjab & Djuwita Carney</em>
 
-During emergency situations, time is the key. Identifying the fastest route to safety or any other related emergency destinations such as hospitals, warming centers shelters, etc. becomes very important during these situations. 
+During emergency situations, time is the key. Identifying the fastest route to safety or other related emergency destinations such as hospitals, warming centers shelters, etc. becomes very important during these situations. 
 
-In this project, we developed a tool that shows the fastest route between two locations under the real time traffic condition.
+In this project, we developed a tool that shows the fastest route between two locations under the real time traffic conditions.
 
 
 The deliverable of this project inludes"
