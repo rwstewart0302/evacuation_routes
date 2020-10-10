@@ -8,7 +8,7 @@ During emergency situations, time is the key. Identifying the fastest route to s
 In this project, we developed a tool that shows the fastest route between two locations under the real time traffic conditions.
 
 
-The deliverable of this project inludes"
+The deliverable of this project inludes
 
 -   The mapping tool
 -   A set of Jupyter notebooks and executable scripts that output the fastest possible route under the real time traffic condition.
@@ -19,11 +19,11 @@ The deliverable of this project inludes"
 
 ## Methodology
 
-Our main focus was determining the fastest and safest evacuation routes during the Kincade Fire in Sonoma CA. 
+Our main focus, was determining the fastest and safest evacuation routes during the Kincade Fire in Sonoma CA. 
 
 **Data Collection** 
 
-Although this tool is applicable to any situations, for this project we used Sonoma County, CA wildfire incidents.  Using the on going incidents allows us to use the real time traffic situation. the location of wildfire incidents were downloaded from:
+Although this tool is applicable to any situation, for this project we used Sonoma County, CA wildfire incidents.  Using the ongoing incidents allows us to use real-time traffic. the location of wildfire incidents were downloaded from:
 
 - [Real time wildfire incidents accross the US](https://firms.modaps.eosdis.nasa.gov/active_fire/#firms-txt)
 - [Real time wildfire incidents in Sonoma County CA](https://fire.ca.gov/incidents/)
@@ -41,7 +41,7 @@ We used the Google Maps API to build an app for real-time mapping:
 
 ## Modeling and Predictions
 
-We attempted to use live twitter data to determine road closures/statuses in real-time. We gathered tweets from the last year in Sonoma County using the `GetOldTweets3` library from all relevant traffic twitter accounts. Next, we used keywords to determine which tweets were discussing topics related to road closures or slowdowns. After we classified our tweets as either discussing closures or not we were then able to build a Logistic Regression model to use in our prediction process. Our Logistic Regression Model had an accuracy score of about 93% on the year-long data-set which was a large improvement over the baseline score of about 77%, therefore our model seemed to perform reasonably well.
+We attempted to use live twitter data to determine road closures/statuses in real-time. We gathered tweets from the last year in Sonoma County using the `GetOldTweets3` library from all relevant traffic twitter accounts. Next, we used keywords to determine which tweets were discussing topics related to road closures or slowdowns. After we classified our tweets as either discussing closures or not, we were then able to build a Logistic Regression model to use in our prediction process. Our Logistic Regression Model had an accuracy score of about 93% on the year-long data-set which was a large improvement over the baseline score of about 77%, therefore our model seemed to perform reasonably well.
 <br>
 <br>
 After building our Logisitic Regression model we then gathered live twitter data during the Kincade Fire in Sonoma County CA. We used our Logistic Regression model to make predictions on this new (unseen) data about whether or not the tweet was discussing road closures. In order to validate the correctness of this model someone would have to manually check the county road closures to see if they match up with what the tweets in our predictions say. This was beyond the scope of this project, however, using our model would allow for a faster checking process.
